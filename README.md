@@ -1,12 +1,8 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a finance tracker that will show you your budget for the month and will include these feature in the future:
+  - Automatic budget allocator depending on income, rent, etc.
+  - Show charts highlighting your usage
+  - Be adaptive to know what month it is and reset the budget automatically every month
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The tech stack for this project is React Native, CSS, and HTML for front-end. For the backend it will include Flask for managing charts, machine models, and data processing to databases. 
