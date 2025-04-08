@@ -1,6 +1,7 @@
 //import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import './App.css'
+import './App.css';
+import { budget } from './util/helper.js';
 
 let month = "April";
 
@@ -23,7 +24,7 @@ function App() {
         <div id="budget">
           <h3>{month}</h3>
           <h4>Remaining Budget:</h4>
-          <h5>{1000}</h5>
+          <h5>{budget}</h5>
         </div>
       </div>
     </>

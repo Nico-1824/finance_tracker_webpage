@@ -2,6 +2,7 @@ import App from "./App";
 import "./Budget.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { updateBudget } from './util/helper.js';
 
 
 let purchases = [
@@ -26,6 +27,7 @@ function Budget() {
             date: date
         }
 
+        updateBudget(cost);
         purchases.push(newPurchase)
     }
 
@@ -67,7 +69,7 @@ function Budget() {
                     <ul>
                         <li onClick={() => navigate('/')}>Home</li>
                         <li onClick={() => navigate('/budget')}>Budget</li>
-                        <li>Statisitics</li>
+                        <li>Statistics</li>
                     </ul>
                     </nav>
                 </header>
