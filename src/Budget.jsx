@@ -1,4 +1,3 @@
-import App from "./App";
 import "./Budget.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -75,7 +74,14 @@ function Budget() {
                 </header>
                 <div id='body'>
                     <div id="options">
-                        <button type="button" onClick={() => setShowModal(true)}>Add Purchase</button>
+                        <button type="button" onClick={() => {
+                            setShowModal(true)
+                            document.addEventListener('keydown', (e) => {
+                                if (e.key === 'Escape') {
+                                    setShowModal(false);
+                                }
+                            })
+                        }}>Add Purchase</button>
                     </div>
                     <table>
                         <thead>

@@ -6,3 +6,7 @@ function updateBudget(cost) {
 }
 
 export { budget, updateBudget }
+
+export function checkLogin() {
+    
+}
